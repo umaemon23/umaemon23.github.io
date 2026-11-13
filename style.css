@@ -128,5 +128,7 @@ a.row--link:hover { background: var(--color-paper-2); }
   .hero-head { flex-direction: column; align-items: flex-start; }
   .row { flex-wrap: wrap; gap: var(--space-2xs) var(--space-md); }
   .row-desc { flex-basis: 100%; order: 3; }
-  .banner { aspect-ratio: 1.5 / 1; }
+  /* phone: the header becomes a thin full-bleed strip, per the user's word 2026-11-13 */
+  .banner { aspect-ratio: 3.4 / 1; margin-inline: calc(-1 * var(--gutter)); border-inline: none; border-radius: 0; }
+  .banner > img { object-position: 50% 25%; }
 }
