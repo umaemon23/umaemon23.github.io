@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>umaemon</title>
+<meta name="description" content="umaemonの個人ホームページ。作っているゲームとボット、いま遊んでいるゲーム、リンクを置いている。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Chivo:wght@400;700;900&family=Silkscreen:wght@700&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead container">
+  <a class="wordmark" href="#top">umaemon</a>
+  <nav class="mastnav">
+    <a href="#works">作品</a>
+    <a href="#games">ゲーム</a>
+    <a href="#links">リンク</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- Hero: poster. The banner photo leads, the name under it. -->
+  <section class="hero container">
+    <figure class="banner" data-slot="banner">
+      <img src="assets/banner.jpg" alt="本人のDiscordプロフィールのバナー画像" fetchpriority="high">
+    </figure>
+    <div class="hero-head">
+      <img class="avatar" src="assets/avatar.png" alt="umaemonのアイコン" width="96" height="96">
+      <div class="hero-titles">
+        <h1 class="display">UMAEMON</h1>
+        <p class="handle">umaemon1.</p>
+      </div>
+    </div>
+    <p class="lead">ゲーム作ったり、AIモデル回したり、PCいじったりしてます。最近はFactorioとFF14。</p>
+    <div class="hero-actions">
+      <a class="btn" href="#works">作品を見る</a>
+      <a class="btn btn--secondary" href="#links">リンク</a>
+    </div>
+  </section>
+
+  <!-- Works: a menu of rows, the current one lit. -->
+  <section class="section container" id="works">
+    <h2>作品</h2>
+    <ul class="rows">
+      <li class="row row--current">
+        <span class="row-title">aegis2d</span>
+        <span class="row-desc">十三機兵の戦闘感だけを借りた2D防衛戦ゲーム</span>
+        <span class="row-status">制作中</span>
+      </li>
+      <li class="row">
+        <span class="row-title">うまえぽん</span>
+        <span class="row-desc">Discordで動くGemma 4ボット</span>
+        <span class="row-status">稼働中</span>
+      </li>
+      <li class="row">
+        <span class="row-title">画像生成パイプライン</span>
+        <span class="row-desc">ローカルのComfyUI環境</span>
+        <span class="row-status">稼働中</span>
+      </li>
+      <li class="row">
+        <span class="row-title">小物置き場</span>
+        <span class="row-desc">小ツールを生やしていく棚</span>
+        <span class="row-status">これから</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Games: what he is playing now. -->
+  <section class="section container" id="games">
+    <h2>ゲーム</h2>
+    <div class="games-grid">
+      <div>
+        <h3 class="subhead">いま遊んでる</h3>
+        <ul class="rows rows--plain">
+          <li class="row"><span class="row-title">Factorio: Space Age</span><span class="row-status">工場拡張中</span></li>
+          <li class="row"><span class="row-title">FF14</span><span class="row-status">gpose撮影</span></li>
+          <li class="row"><span class="row-title">Warzone</span><span class="row-status">Resurgence</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section class="section container" id="links">
+    <h2>リンク</h2>
+    <ul class="rows">
+      <li><a class="row row--link" href="#"><span class="row-title">X</span><span class="row-desc">日常と進捗</span></a></li>
+      <li><a class="row row--link" href="#"><span class="row-title">Discord</span><span class="row-desc">umaemon1.</span></a></li>
+      <li><a class="row row--link" href="https://github.com/umaemon23"><span class="row-title">GitHub</span><span class="row-desc">コード置き場</span></a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer container">
+  <p class="footer-mark display">UMAEMON</p>
+  <p>作ったものを置いていく場所。</p>
+  <p class="footer-line">since 2026</p>
+  <p class="footer-credit">バナーとアイコンは本人のDiscordプロフィールから切り出した仮素材。</p>
+</footer>
+
+<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });
+</script>
+</body>
+</html>
