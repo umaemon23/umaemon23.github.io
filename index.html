@@ -26,7 +26,7 @@
   <!-- Hero: poster. The banner photo leads, the name under it. -->
   <section class="hero container">
     <figure class="banner" data-slot="banner">
-      <img src="assets/banner.jpg" alt="本人のDiscordプロフィールのバナー画像" fetchpriority="high">
+      <img src="assets/banner.jpg" alt="和室で兵士たちと向かい合う少女の3Dシーン" fetchpriority="high">
     </figure>
     <div class="hero-head">
       <img class="avatar" src="assets/avatar.png" alt="umaemonのアイコン" width="96" height="96">
@@ -100,7 +100,7 @@
   <p class="footer-mark display">UMAEMON</p>
   <p>作ったものを置いていく場所。</p>
   <p class="footer-line">since 2026</p>
-  <p class="footer-credit">バナーとアイコンは本人のDiscordプロフィールから切り出した仮素材。</p>
+  <p class="footer-credit">アイコンは本人のDiscordプロフィールから切り出した仮素材。</p>
 </footer>
 
 <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
