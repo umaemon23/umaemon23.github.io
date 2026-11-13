@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>umaemon</title>
-<meta name="description" content="umaemonの個人ホームページ。作っているゲームとボット、いま遊んでいるゲーム、リンクを置いている。">
+<meta name="description" content="umaemonの個人ホームページ。作っているゲームとボット、お気に入り、リンクを置いている。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Chivo:wght@400;700;900&family=Silkscreen:wght@700&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
   <a class="wordmark" href="#top">umaemon</a>
   <nav class="mastnav">
     <a href="#works">作品</a>
-    <a href="#games">ゲーム</a>
+    <a href="#games">お気に入り</a>
     <a href="#links">リンク</a>
   </nav>
 </header>
@@ -69,19 +69,13 @@
     </ul>
   </section>
 
-  <!-- Games: what he is playing now. -->
+  <!-- Favorites: all-time picks, not a play log. -->
   <section class="section container" id="games">
-    <h2>ゲーム</h2>
-    <div class="games-grid">
-      <div>
-        <h3 class="subhead">いま遊んでる</h3>
-        <ul class="rows rows--plain">
-          <li class="row"><span class="row-title">Factorio: Space Age</span><span class="row-status">工場拡張中</span></li>
-          <li class="row"><span class="row-title">FF14</span><span class="row-status">gpose撮影</span></li>
-          <li class="row"><span class="row-title">Warzone</span><span class="row-status">Resurgence</span></li>
-        </ul>
-      </div>
-    </div>
+    <h2>FAVORITES</h2>
+    <ul class="rows rows--plain">
+      <li class="row"><span class="row-title">FINAL FANTASY XIV</span><span class="row-desc">MMORPG</span><span class="row-status">gpose</span></li>
+      <li class="row"><span class="row-title">CALL OF DUTY</span><span class="row-desc">FPS</span><span class="row-status">Warzone — Resurgence</span></li>
+    </ul>
   </section>
 
   <!-- Links -->
@@ -100,7 +94,6 @@
   <p class="footer-mark display">UMAEMON</p>
   <p>作ったものを置いていく場所。</p>
   <p class="footer-line">since 2026</p>
-  <p class="footer-credit">アイコンは本人のDiscordプロフィールから切り出した仮素材。</p>
 </footer>
 
 <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
